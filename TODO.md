@@ -1,3 +1,0 @@
-# TODOS
-
-- Update manifest json
