@@ -10,15 +10,16 @@ const Layout = ({ children }) => {
         sx={{
           flexDirection: "column",
           minHeight: "100vh",
-          maxWidth: "container",
-          mx: "auto",
-          px: 3,
         }}
       >
         <Header />
         <main
           sx={{
             flex: 1,
+            width: "100%",
+            maxWidth: "container",
+            mx: "auto",
+            px: 3,
           }}
         >
           {children}

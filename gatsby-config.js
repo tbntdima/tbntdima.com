@@ -3,6 +3,10 @@ module.exports = {
     title: `Dima An`,
     description: `Dima An - Front end web developer`,
     author: `@tbnt_dima`,
+    socials: {
+      twitter: "https://twitter.com/tbnt_dima",
+      github: "https://github.com/tbntdima",
+    },
   },
   plugins: [
     {

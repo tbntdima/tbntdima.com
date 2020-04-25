@@ -9,6 +9,10 @@ const Header = () => {
       as="header"
       sx={{
         justifyContent: "space-between",
+        width: "100%",
+        maxWidth: "container",
+        mx: "auto",
+        px: 3,
         py: 3,
       }}
     >

@@ -23,7 +23,9 @@ export default {
   },
   colors: {
     text: "#151515",
+    textOnDark: "#FFFFFF",
     background: "#FAFAFA",
+    darkBackground: "#000",
     primary: "#0057FF",
     // secondary: "#30c",
     muted: "#30353E",
