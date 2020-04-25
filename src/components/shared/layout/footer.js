@@ -40,7 +40,7 @@ const Footer = () => {
                 mx: "auto",
                 px: 3,
                 py: 3,
-                color: "textOnDark",
+                color: "textReverse",
               }}
             >
               <Link to="/">
@@ -50,14 +50,14 @@ const Footer = () => {
                 <ThemedLink
                   href={githubUrl}
                   target="_blank"
-                  sx={{ display: "flex", color: "textOnDark" }}
+                  sx={{ display: "flex", color: "white" }}
                 >
                   <GrGithub fontSize="30px" />
                 </ThemedLink>
                 <ThemedLink
                   href={twitterUrl}
                   target="_blank"
-                  sx={{ display: "flex", marginLeft: 3, color: "textOnDark" }}
+                  sx={{ display: "flex", marginLeft: 3, color: "white" }}
                 >
                   <GrTwitter fontSize="30px" />
                 </ThemedLink>
@@ -74,7 +74,7 @@ const Footer = () => {
                 mx: "auto",
                 px: 3,
                 py: 2,
-                color: "textOnDark",
+                color: "textReverse",
               }}
             >
               <Text as="p">© tbntdima • 2020</Text>
@@ -93,9 +93,15 @@ const Footer = () => {
                   •
                 </span>{" "}
                 Built with{" "}
-                <GatsbyLogo style={{ margin: `0 ${theme.space[2]}` }} /> •
-                Deployed on{" "}
-                <NetlifyLogo style={{ margin: `0 ${theme.space[2]}` }} />
+                <GatsbyLogo
+                  color={theme.colors.textReverse}
+                  style={{ margin: `0 ${theme.space[2]}` }}
+                />{" "}
+                • Deployed on{" "}
+                <NetlifyLogo
+                  color={theme.colors.textReverse}
+                  style={{ margin: `0 ${theme.space[2]}` }}
+                />
               </Text>
             </Flex>
           </Box>

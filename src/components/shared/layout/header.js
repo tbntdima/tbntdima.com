@@ -2,6 +2,7 @@
 import { jsx, Flex } from "theme-ui"
 import { Link } from "gatsby"
 import Logo from "../../../assets/images/svgs/logo"
+import ThemeToggle from "./theme-toggle"
 
 const Header = () => {
   return (
@@ -20,7 +21,7 @@ const Header = () => {
         <Logo />
       </Link>
 
-      {/* ThemeToggler */}
+      <ThemeToggle />
     </Flex>
   )
 }
