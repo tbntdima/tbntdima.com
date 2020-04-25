@@ -5,6 +5,13 @@ module.exports = {
     author: `@tbnt_dima`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Poppins\:400,600,700`, `Roboto`],
+        display: "swap",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
