@@ -1,4 +1,8 @@
 export default {
+  breakpoints: ["40em", "56em", "64em"],
+  sizes: {
+    container: 996,
+  },
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body:
@@ -22,14 +26,14 @@ export default {
     background: "#FAFAFA",
     primary: "#0057FF",
     // secondary: "#30c",
-    // muted: "#f6f6f6",
+    muted: "#30353E",
     modes: {
       dark: {
         text: "#FFFFFF",
         background: "#20232A",
         primary: "#F8DF00",
         // secondary: "#30c",
-        // muted: "#f6f6f6",
+        muted: "#30353E",
       },
     },
   },
