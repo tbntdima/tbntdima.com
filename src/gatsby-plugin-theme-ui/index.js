@@ -1,3 +1,97 @@
+const primitiveStyles = {
+  h1: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 5,
+  },
+  h2: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 4,
+  },
+  h3: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 3,
+  },
+  h4: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 2,
+  },
+  h5: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 1,
+  },
+  h6: {
+    mt: 0,
+    mb: 4,
+    color: "text",
+    fontFamily: "heading",
+    lineHeight: "heading",
+    fontWeight: "heading",
+    fontSize: 0,
+  },
+  p: {
+    mt: 0,
+    mb: 4,
+    fontFamily: "body",
+    fontWeight: "body",
+    lineHeight: "body",
+  },
+  a: {
+    color: "primary",
+  },
+  pre: {
+    fontFamily: "monospace",
+    overflowX: "auto",
+    code: {
+      color: "inherit",
+    },
+  },
+  code: {
+    fontFamily: "monospace",
+    fontSize: "inherit",
+  },
+  table: {
+    width: "100%",
+    borderCollapse: "separate",
+    borderSpacing: 0,
+  },
+  th: {
+    textAlign: "left",
+    borderBottomStyle: "solid",
+  },
+  td: {
+    textAlign: "left",
+    borderBottomStyle: "solid",
+  },
+  img: {
+    maxWidth: "100%",
+  },
+}
+
 export default {
   breakpoints: ["40em", "56em", "64em"], // 640, 896, 976
   sizes: {
@@ -11,14 +105,14 @@ export default {
       'Poppins, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif',
     monospace: "Menlo, monospace",
   },
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
+  fontSizes: [12, 14, 18, 20, 24, 32, 48, 64, 96],
   fontWeights: {
     body: 400,
     heading: 600,
     bold: 900,
   },
   lineHeights: {
-    body: 1.5,
+    body: "26px",
     heading: 1.2,
   },
   initialColorModeName: "light",
@@ -34,7 +128,7 @@ export default {
     cardBackground: "#fff",
     modes: {
       dark: {
-        text: "#FFFFFF",
+        text: "rgba(255, 255, 255, 0.88)",
         textReverse: "#151515",
         background: "#20232A",
         primary: "#F8DF00",
@@ -50,84 +144,9 @@ export default {
       fontFamily: "body",
       lineHeight: "body",
       fontWeight: "body",
-    },
-    h1: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 5,
-    },
-    h2: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 4,
-    },
-    h3: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 3,
-    },
-    h4: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
       fontSize: 2,
+      ...primitiveStyles,
     },
-    h5: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 1,
-    },
-    h6: {
-      color: "text",
-      fontFamily: "heading",
-      lineHeight: "heading",
-      fontWeight: "heading",
-      fontSize: 0,
-    },
-    p: {
-      color: "text",
-      fontFamily: "body",
-      fontWeight: "body",
-      lineHeight: "body",
-    },
-    a: {
-      color: "primary",
-    },
-    pre: {
-      fontFamily: "monospace",
-      overflowX: "auto",
-      code: {
-        color: "inherit",
-      },
-    },
-    code: {
-      fontFamily: "monospace",
-      fontSize: "inherit",
-    },
-    table: {
-      width: "100%",
-      borderCollapse: "separate",
-      borderSpacing: 0,
-    },
-    th: {
-      textAlign: "left",
-      borderBottomStyle: "solid",
-    },
-    td: {
-      textAlign: "left",
-      borderBottomStyle: "solid",
-    },
-    img: {
-      maxWidth: "100%",
-    },
+    ...primitiveStyles,
   },
 }
