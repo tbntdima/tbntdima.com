@@ -13,8 +13,12 @@ const Blog = () => {
               node {
                 id
                 timeToRead
+                fields {
+                  slug
+                }
                 frontmatter {
                   title
+
                   date(formatString: "MMMM DD, YYYY")
                   spoiler
                   heroImage {
@@ -56,7 +60,7 @@ const Blog = () => {
             {blogPosts.map(({ node: post }) => (
               <Link
                 key={post.id}
-                to="/tmp"
+                to={post.fields.slug}
                 sx={{
                   color: "inherit",
                   textDecoration: "none",
