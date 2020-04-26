@@ -31,7 +31,7 @@ const Footer = () => {
         },
       }) => (
         <Box as="footer">
-          <Box backgroundColor="darkBackground">
+          <Box backgroundColor="black">
             <Flex
               sx={{
                 justifyContent: "space-between",

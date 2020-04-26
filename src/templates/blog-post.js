@@ -1,9 +1,10 @@
 /** @jsx jsx */
-import { jsx, Heading, Text } from "theme-ui"
+import { jsx, Flex, Box, Heading, Text } from "theme-ui"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
+import Button from "../components/shared/button"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -23,6 +24,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           mb: 4,
         }}
       >
+        <Link
+          to="/"
+          rel="home"
+          sx={{
+            display: "inline-block",
+            my: 3,
+            textDecoration: "none",
+          }}
+        >
+          <Button>← Homepage</Button>
+        </Link>
         <Heading
           sx={{
             mb: 2,
@@ -62,17 +74,41 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         />
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <Flex
+          sx={{
+            flexDirection: ["column", "row"],
+            justifyContent: ["stretch", "space-between"],
+          }}
+        >
+          <Box>
+            {previous && (
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                sx={{
+                  mb: 2,
+                  textDecoration: "none",
+                }}
+              >
+                <Button>← {previous.frontmatter.title}</Button>
+              </Link>
+            )}
+          </Box>
+          {next && (
+            <Link
+              to={next.fields.slug}
+              rel="next"
+              sx={{
+                mb: 2,
+                textDecoration: "none",
+              }}
+            >
+              <Button>{next.frontmatter.title} →</Button>
+            </Link>
+          )}
+        </Flex>
       </section>
-      {previous && (
-        <Link to={previous.fields.slug} rel="prev">
-          ← {previous.frontmatter.title}
-        </Link>
-      )}
-      {next && (
-        <Link to={next.fields.slug} rel="next">
-          {next.frontmatter.title} →
-        </Link>
-      )}
     </Layout>
   )
 }

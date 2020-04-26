@@ -120,11 +120,11 @@ export default {
     text: "#151515",
     textReverse: "#FFFFFF",
     background: "#FAFAFA",
-    darkBackground: "#000",
     primary: "#0057FF",
     // secondary: "#30c",
     muted: "#30353E",
     white: "#fff",
+    black: "#000",
     cardBackground: "#fff",
     modes: {
       dark: {
@@ -135,6 +135,7 @@ export default {
         // secondary: "#30c",
         muted: "#30353E",
         white: "#fff",
+        black: "#000",
         cardBackground: "#30353E",
       },
     },
