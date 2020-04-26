@@ -94,9 +94,9 @@ const Footer = () => {
                   •
                 </span>{" "}
                 Built with{" "}
-                <GatsbyLogo style={{ margin: `0 ${theme.space[2]}` }} /> •
+                <GatsbyLogo style={{ margin: `0 ${theme.space[2]}px` }} /> •
                 Deployed on{" "}
-                <NetlifyLogo style={{ margin: `0 ${theme.space[2]}` }} />
+                <NetlifyLogo style={{ margin: `0 ${theme.space[2]}px` }} />
               </Text>
             </Flex>
           </Box>
