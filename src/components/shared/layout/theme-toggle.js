@@ -6,7 +6,7 @@ import Moon from "../../../assets/images/svgs/moon"
 const ThemeToggle = () => {
   const [colorMode, setColorMode] = useColorMode()
 
-  return (
+  return typeof window !== "undefined" ? (
     <Flex
       sx={{
         position: "relative",
@@ -38,7 +38,7 @@ const ThemeToggle = () => {
         }}
       />
     </Flex>
-  )
+  ) : null
 }
 
 export default ThemeToggle
