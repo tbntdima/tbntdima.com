@@ -5,6 +5,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
 import Button from "../components/shared/button"
+import CoffeeIcon from "../assets/images/svgs/coffee"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -47,11 +48,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
         <Text
           sx={{
+            display: "flex",
+            alignItems: "center",
             mb: 2,
             color: "primary",
           }}
         >
-          {post.frontmatter.date} • {post.timeToRead} min read
+          {post.frontmatter.date} • <CoffeeIcon sx={{ ml: 1 }} />
+          {post.timeToRead} min read
         </Text>
 
         <Text
