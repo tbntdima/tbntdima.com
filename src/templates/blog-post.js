@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import { jsx, Flex, Heading, Text } from "theme-ui"
+import { jsx, Heading, Text } from "theme-ui"
 import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
-import Bio from "../components/bio"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -64,6 +63,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </section>
+      {previous && (
+        <Link to={previous.fields.slug} rel="prev">
+          ← {previous.frontmatter.title}
+        </Link>
+      )}
+      {next && (
+        <Link to={next.fields.slug} rel="next">
+          {next.frontmatter.title} →
+        </Link>
+      )}
     </Layout>
   )
 }
