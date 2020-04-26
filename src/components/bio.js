@@ -103,7 +103,7 @@ const Bio = () => {
                 as="p"
                 sx={{
                   fontSize: 2,
-                  lineHeight: "homeHeroText",
+                  lineHeight: "body",
                   mb: 3,
                 }}
               >

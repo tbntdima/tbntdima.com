@@ -15,12 +15,11 @@ export default {
   fontWeights: {
     body: 400,
     heading: 600,
-    bold: 700,
+    bold: 900,
   },
   lineHeights: {
     body: 1.5,
     heading: 1.2,
-    homeHeroText: 2.6,
   },
   initialColorModeName: "light",
   colors: {
