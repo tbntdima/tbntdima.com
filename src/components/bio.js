@@ -10,7 +10,7 @@ const Bio = () => {
     <StaticQuery
       query={graphql`
         query {
-          avatar: file(relativePath: { eq: "avatar.jpg" }) {
+          avatar: file(relativePath: { eq: "avatar.png" }) {
             childImageSharp {
               fluid(maxWidth: 375, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
@@ -35,8 +35,8 @@ const Bio = () => {
               <Img
                 fluid={avatar.childImageSharp.fluid}
                 sx={{
-                  width: ["200px", "250px", "300px"],
-                  height: ["200px", "250px", "300px"],
+                  width: ["250px", "250px", "350px"],
+                  height: ["250px", "250px", "350px"],
                   borderRadius: "50%",
                   mx: "auto",
                 }}
@@ -44,7 +44,7 @@ const Bio = () => {
             </Box>
             <Box
               sx={{
-                width: ["100%", "calc(100% - 290px)", "calc(100% - 415px)"],
+                width: ["100%", "calc(100% - 290px)", "calc(100% - 450px)"],
                 maxWidth: ["343px", "436px"],
                 mx: "auto",
               }}
@@ -68,6 +68,7 @@ const Bio = () => {
                   fontSize: 6,
                   fontWeight: "bold",
                   mb: 3,
+                  lineHeight: 1.1,
                 }}
               >
                 <span
@@ -115,7 +116,7 @@ const Bio = () => {
                 <Box>
                   <GithubButton />
                 </Box>
-                <Box sx={{ ml: [2, 3] }}>
+                <Box sx={{ ml: [2] }}>
                   <TwitterButton />
                 </Box>
               </Flex>
