@@ -38,7 +38,7 @@ const Twitter = () => (
           color: "#fff",
         }}
       >
-        <GrTwitter size="25px" sx={{ mr: 2 }} /> @tbnt_dima
+        <GrTwitter size="25px" sx={{ mr: 2, minWidth: "25px" }} /> @tbnt_dima
       </Link>
     )}
   />

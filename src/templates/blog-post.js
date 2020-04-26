@@ -85,19 +85,21 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             justifyContent: "space-between",
           }}
         >
-          {previous && (
-            <Link
-              to={previous.fields.slug}
-              rel="prev"
-              title={previous.frontmatter.title}
-              sx={{
-                width: "126px",
-                textDecoration: "none",
-              }}
-            >
-              <Button>← Previous</Button>
-            </Link>
-          )}
+          <Box>
+            {previous && (
+              <Link
+                to={previous.fields.slug}
+                rel="prev"
+                title={previous.frontmatter.title}
+                sx={{
+                  width: "126px",
+                  textDecoration: "none",
+                }}
+              >
+                <Button>← Previous</Button>
+              </Link>
+            )}
+          </Box>
           {next && (
             <Link
               to={next.fields.slug}

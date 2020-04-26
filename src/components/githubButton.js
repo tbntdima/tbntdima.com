@@ -38,7 +38,7 @@ const GithubButton = () => (
           color: "#000",
         }}
       >
-        <GrGithub size="25px" sx={{ mr: 2 }} /> tbntdima
+        <GrGithub size="25px" sx={{ mr: 2, minWidth: "25px" }} /> tbntdima
       </Link>
     )}
   />

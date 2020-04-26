@@ -35,6 +35,7 @@ const Card = ({ post }) => (
           alignItems: "center",
           mb: 3,
           color: "primary",
+          fontSize: [1, 1, 2],
         }}
       >
         {post.frontmatter.date} • <CoffeeIcon sx={{ ml: 1 }} />
