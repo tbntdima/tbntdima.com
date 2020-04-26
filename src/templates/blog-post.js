@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         sx={{
           maxWidth: "880px",
           mx: "auto",
-          mb: 4,
+          mb: 5,
         }}
       >
         <Link
@@ -30,7 +30,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           rel="home"
           sx={{
             display: "inline-block",
-            my: 3,
+            mt: 3,
+            mb: 4,
             textDecoration: "none",
           }}
         >
@@ -38,7 +39,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </Link>
         <Heading
           sx={{
-            mb: 2,
+            mb: 3,
             fontSize: [4, 5, 6],
             fontWeight: "bold",
           }}
@@ -50,7 +51,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           sx={{
             display: "flex",
             alignItems: "center",
-            mb: 2,
+            mb: 3,
             color: "primary",
           }}
         >
@@ -61,7 +62,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <Text
           as="p"
           sx={{
-            mb: 2,
+            mb: 3,
           }}
         >
           {post.frontmatter.spoiler}
@@ -83,6 +84,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           sx={{
             flexDirection: "row",
             justifyContent: "space-between",
+            mt: 5,
           }}
         >
           <Box>

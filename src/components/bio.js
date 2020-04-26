@@ -28,7 +28,7 @@ const Bio = () => {
               maxWidth: 838,
               mx: "auto",
               pt: 2,
-              pb: 5,
+              pb: 4,
             }}
           >
             <Box sx={{ flex: 1, width: ["100%", "200px"], mb: 3 }}>
@@ -105,7 +105,7 @@ const Bio = () => {
                 sx={{
                   fontSize: 2,
                   lineHeight: "body",
-                  mb: 3,
+                  mb: 4,
                 }}
               >
                 I like building functional websites with data-driven, polished
@@ -115,7 +115,7 @@ const Bio = () => {
                 <Box>
                   <GithubButton />
                 </Box>
-                <Box sx={{ ml: 2 }}>
+                <Box sx={{ ml: [2, 3] }}>
                   <TwitterButton />
                 </Box>
               </Flex>

@@ -1,7 +1,7 @@
 const primitiveStyles = {
   h1: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -10,7 +10,7 @@ const primitiveStyles = {
   },
   h2: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -19,7 +19,7 @@ const primitiveStyles = {
   },
   h3: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -28,7 +28,7 @@ const primitiveStyles = {
   },
   h4: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -37,7 +37,7 @@ const primitiveStyles = {
   },
   h5: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -46,7 +46,7 @@ const primitiveStyles = {
   },
   h6: {
     mt: 0,
-    mb: 4,
+    mb: 3,
     color: "text",
     fontFamily: "heading",
     lineHeight: "heading",
@@ -90,6 +90,16 @@ const primitiveStyles = {
   img: {
     maxWidth: "100%",
   },
+  'code[class*="language-"]': {
+    color: "text",
+    backgroundColor: "codeBackground",
+  },
+  'pre[class*="language-"]': {
+    "& code": {
+      color: "inherit",
+      backgroundColor: "inherit",
+    },
+  },
 }
 
 export default {
@@ -126,6 +136,7 @@ export default {
     white: "#fff",
     black: "#000",
     cardBackground: "#fff",
+    codeBackground: "rgba(255, 229, 100, 0.2)",
     modes: {
       dark: {
         text: "rgba(255, 255, 255, 0.88)",
@@ -137,6 +148,7 @@ export default {
         white: "#fff",
         black: "#000",
         cardBackground: "#30353E",
+        codeBackground: "rgba(115, 124, 153, .2)",
       },
     },
   },

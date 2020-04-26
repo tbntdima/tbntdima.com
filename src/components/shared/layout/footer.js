@@ -75,6 +75,7 @@ const Footer = () => {
                 px: 3,
                 py: 2,
                 color: "textReverse",
+                fontSize: [1, 1, 2],
               }}
             >
               <Text as="p">© tbntdima • 2020</Text>
