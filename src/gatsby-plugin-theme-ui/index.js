@@ -31,6 +31,7 @@ export default {
     // secondary: "#30c",
     muted: "#30353E",
     white: "#fff",
+    cardBackground: "#fff",
     modes: {
       dark: {
         text: "#FFFFFF",
@@ -40,6 +41,7 @@ export default {
         // secondary: "#30c",
         muted: "#30353E",
         white: "#fff",
+        cardBackground: "#30353E",
       },
     },
   },

@@ -27,7 +27,8 @@ const Bio = () => {
               flexDirection: ["column", "row"],
               maxWidth: 838,
               mx: "auto",
-              py: 2,
+              pt: 2,
+              pb: 5,
             }}
           >
             <Box sx={{ flex: 1, width: ["100%", "200px"], mb: 3 }}>
