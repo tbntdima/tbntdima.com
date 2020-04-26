@@ -81,34 +81,34 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
         <Flex
           sx={{
-            flexDirection: ["column", "row"],
-            justifyContent: ["stretch", "space-between"],
+            flexDirection: "row",
+            justifyContent: "space-between",
           }}
         >
-          <Box>
-            {previous && (
-              <Link
-                to={previous.fields.slug}
-                rel="prev"
-                sx={{
-                  mb: 2,
-                  textDecoration: "none",
-                }}
-              >
-                <Button>← {previous.frontmatter.title}</Button>
-              </Link>
-            )}
-          </Box>
+          {previous && (
+            <Link
+              to={previous.fields.slug}
+              rel="prev"
+              title={previous.frontmatter.title}
+              sx={{
+                width: "126px",
+                textDecoration: "none",
+              }}
+            >
+              <Button>← Previous</Button>
+            </Link>
+          )}
           {next && (
             <Link
               to={next.fields.slug}
               rel="next"
+              title={next.frontmatter.title}
               sx={{
-                mb: 2,
+                width: "126px",
                 textDecoration: "none",
               }}
             >
-              <Button>{next.frontmatter.title} →</Button>
+              <Button>Next →</Button>
             </Link>
           )}
         </Flex>
