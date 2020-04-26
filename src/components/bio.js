@@ -24,23 +24,30 @@ const Bio = () => {
           <Flex
             as="section"
             sx={{
-              flexDirection: "column",
+              flexDirection: ["column", "row"],
               maxWidth: 838,
               mx: "auto",
               py: 2,
             }}
           >
-            <Box sx={{ mx: "auto", mb: 3 }}>
+            <Box sx={{ flex: 1, width: ["100%", "200px"], mb: 3 }}>
               <Img
                 fluid={avatar.childImageSharp.fluid}
                 sx={{
-                  width: 150,
-                  height: 150,
+                  width: ["200px", "250px", "300px"],
+                  height: ["200px", "250px", "300px"],
                   borderRadius: "50%",
+                  mx: "auto",
                 }}
               />
             </Box>
-            <Box>
+            <Box
+              sx={{
+                width: ["100%", "calc(100% - 290px)", "calc(100% - 415px)"],
+                maxWidth: ["343px", "436px"],
+                mx: "auto",
+              }}
+            >
               <Text
                 sx={{
                   mb: 1,

@@ -1,5 +1,5 @@
 export default {
-  breakpoints: ["40em", "56em", "64em"],
+  breakpoints: ["40em", "56em", "64em"], // 640, 896, 976
   sizes: {
     container: 996,
   },
