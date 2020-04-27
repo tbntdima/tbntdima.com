@@ -10,7 +10,7 @@ const Bio = () => {
     <StaticQuery
       query={graphql`
         query {
-          avatar: file(relativePath: { eq: "avatar.png" }) {
+          avatar: file(relativePath: { eq: "avatar.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 375, quality: 100) {
                 ...GatsbyImageSharpFluid_tracedSVG
