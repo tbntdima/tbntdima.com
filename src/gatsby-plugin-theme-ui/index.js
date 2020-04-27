@@ -125,7 +125,7 @@ export default {
     body: "26px",
     heading: 1.2,
   },
-  initialColorModeName: "light",
+  initialColorModeName: "dark",
   colors: {
     text: "#151515",
     textReverse: "#FFFFFF",
