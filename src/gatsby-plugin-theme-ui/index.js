@@ -129,7 +129,7 @@ export default {
   colors: {
     text: "#151515",
     textReverse: "#FFFFFF",
-    background: "#FAFAFA",
+    background: "#f9fafb",
     primary: "#0057FF",
     // secondary: "#30c",
     muted: "#30353E",
