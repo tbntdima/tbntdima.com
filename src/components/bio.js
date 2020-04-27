@@ -35,8 +35,8 @@ const Bio = () => {
               <Img
                 fluid={avatar.childImageSharp.fluid}
                 sx={{
-                  width: ["250px", "250px", "350px"],
-                  height: ["250px", "250px", "350px"],
+                  width: ["250px", "250px", "340px"],
+                  height: ["250px", "250px", "340px"],
                   borderRadius: "50%",
                   mx: "auto",
                 }}
@@ -109,8 +109,9 @@ const Bio = () => {
                   mb: 4,
                 }}
               >
-                I like building functional websites with data-driven, polished
-                web and mobile interfaces. Now I'm keen on React and Gatsby.
+                Web dewelopment & JavaScript enthusiast.
+                <br />
+                Keen on React & Gatsby.
               </Text>
               <Flex>
                 <Box>
