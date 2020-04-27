@@ -98,6 +98,33 @@ const Footer = () => {
                 Deployed on{" "}
                 <NetlifyLogo style={{ margin: `0 ${theme.space[2]}px` }} />
               </Text>
+              <Text
+                as="p"
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <span
+                  sx={{
+                    display: ["none", "block"],
+                    mx: 1,
+                  }}
+                >
+                  •
+                </span>{" "}
+                Designed by{" "}
+                <ThemedLink
+                  href="https://amaltapalov.com/"
+                  target="_blank"
+                  sx={{
+                    color: "textReverse",
+                    textDecoration: "underline",
+                    ml: 2,
+                  }}
+                >
+                  Amal Tapalov
+                </ThemedLink>
+              </Text>
             </Flex>
           </Box>
         </Box>
