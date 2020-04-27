@@ -17,6 +17,7 @@ const ThemeToggle = () => {
         backgroundColor: "primary",
         borderRadius: 20,
         p: "2px",
+        cursor: "pointer",
       }}
       onClick={() => setColorMode(colorMode === "light" ? "dark" : "light")}
     >
@@ -35,6 +36,7 @@ const ThemeToggle = () => {
             colorMode === "light"
               ? "translateX(0)"
               : "translateX(calc(100% + 2px))",
+          transition: ".2s",
         }}
       />
     </Flex>
