@@ -52,7 +52,6 @@ const Bio = () => {
               <Text
                 sx={{
                   mb: 1,
-                  opacity: 0.5,
                   color: "text",
                   fotnFamily: "heading",
                   fontWeight: "body",
@@ -75,6 +74,7 @@ const Bio = () => {
                   sx={{
                     position: "relative",
                     display: "inline-block",
+                    backgroundColor: "primary",
                     "::before": {
                       content: '""',
                       position: "absolute",
