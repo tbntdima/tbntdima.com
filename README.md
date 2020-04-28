@@ -1,12 +1,6 @@
-<p>
-  <a href="https://tbntdima.com">
-    <img alt="Dima An" src="https://tbntdima.com/logo.png" width="150" />
-  </a>
-</p>
+# My personal webiste
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7c093943-13b3-44be-bab6-bbd7efdc542c/deploy-status)](https://app.netlify.com/sites/mystifying-clarke-5a4b7c/deploys)
-
-My personal webiste.
 
 ## Development
 
