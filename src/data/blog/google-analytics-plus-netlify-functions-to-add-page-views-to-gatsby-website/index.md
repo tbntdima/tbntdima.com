@@ -5,6 +5,4 @@ spoiler: Use Google Analytics + Netlify functions to add page views to Gatsby we
 heroImage: "./hero.jpg"
 ---
 
-## Header
-
-Test
+## WIP
