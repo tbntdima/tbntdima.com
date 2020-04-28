@@ -17,6 +17,7 @@ const ThemeToggle = () => {
         backgroundColor: "primary",
         borderRadius: 20,
         p: "2px",
+        cursor: "pointer",
       }}
       onClick={() => setColorMode(colorMode === "light" ? "dark" : "light")}
     >
