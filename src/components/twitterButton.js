@@ -26,6 +26,8 @@ const Twitter = () => (
       <Link
         href={twitterUrl}
         target="_blank"
+        rel="noreferrer"
+        title="tbnt_dima twitter profile"
         sx={{
           display: "flex",
           justifyContent: "center",

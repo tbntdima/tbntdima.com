@@ -28,6 +28,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <Link
           to="/"
           rel="home"
+          title="homepage"
           sx={{
             display: "inline-block",
             mt: 3,
@@ -140,7 +141,7 @@ export const pageQuery = graphql`
         heroImage {
           childImageSharp {
             fluid(maxWidth: 440, quality: 100) {
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }

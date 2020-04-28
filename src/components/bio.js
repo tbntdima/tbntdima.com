@@ -13,7 +13,7 @@ const Bio = () => {
           avatar: file(relativePath: { eq: "avatar.jpg" }) {
             childImageSharp {
               fluid(maxWidth: 375, quality: 100) {
-                ...GatsbyImageSharpFluid_tracedSVG
+                ...GatsbyImageSharpFluid_withWebp_tracedSVG
               }
             }
           }

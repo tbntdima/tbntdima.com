@@ -27,7 +27,7 @@ const Blog = () => {
                   heroImage {
                     childImageSharp {
                       fluid(maxWidth: 440, quality: 100) {
-                        ...GatsbyImageSharpFluid_tracedSVG
+                        ...GatsbyImageSharpFluid_withWebp_tracedSVG
                       }
                     }
                   }
@@ -64,6 +64,7 @@ const Blog = () => {
               <Link
                 key={post.id}
                 to={post.fields.slug}
+                title={post.frontmatter.title}
                 sx={{
                   color: "inherit",
                   textDecoration: "none",

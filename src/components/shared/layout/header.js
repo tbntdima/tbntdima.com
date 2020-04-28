@@ -17,7 +17,7 @@ const Header = () => {
         py: 3,
       }}
     >
-      <Link to="/">
+      <Link to="/" title="homepage">
         <Logo />
       </Link>
 

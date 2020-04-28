@@ -43,13 +43,15 @@ const Footer = () => {
                 color: "textReverse",
               }}
             >
-              <Link to="/">
+              <Link to="/" title="homepage">
                 <Logo />
               </Link>
               <Flex sx={{ alignItems: "center" }}>
                 <ThemedLink
                   href={githubUrl}
                   target="_blank"
+                  rel="noreferrer"
+                  title="tbntdima github profile"
                   sx={{ display: "flex", color: "white" }}
                 >
                   <GrGithub fontSize="30px" />
@@ -57,6 +59,8 @@ const Footer = () => {
                 <ThemedLink
                   href={twitterUrl}
                   target="_blank"
+                  rel="noreferrer"
+                  title="tbnt_dima twitter profile"
                   sx={{ display: "flex", marginLeft: 3, color: "white" }}
                 >
                   <GrTwitter fontSize="30px" />
@@ -116,6 +120,8 @@ const Footer = () => {
                 <ThemedLink
                   href="https://amaltapalov.com/"
                   target="_blank"
+                  rel="noreferrer"
+                  title="Amal Tapalov personal website"
                   sx={{
                     color: "textReverse",
                     textDecoration: "underline",

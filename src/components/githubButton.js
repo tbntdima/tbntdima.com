@@ -26,6 +26,8 @@ const GithubButton = () => (
       <Link
         href={githubUrl}
         target="_blank"
+        rel="noreferrer"
+        title="tbntdima github profile"
         sx={{
           display: "flex",
           justifyContent: "center",
