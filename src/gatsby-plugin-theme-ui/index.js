@@ -162,4 +162,17 @@ export default {
     },
     ...primitiveStyles,
   },
+  links: {
+    secondary: {
+      display: "inline-flex",
+      justifyContent: "center",
+      alignItems: "center",
+      p: "8px 16px",
+      backgroundColor: "cardBackground",
+      boxShadow: "0px 2px 4px rgba(92, 99, 105, 0.15)",
+      borderRadius: "100px",
+      color: "primary",
+      textDecoration: "none",
+    },
+  },
 }

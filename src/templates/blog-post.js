@@ -4,7 +4,6 @@ import Img from "gatsby-image"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/shared/layout"
 import SEO from "../components/shared/seo"
-import Button from "../components/shared/button"
 import CoffeeIcon from "../assets/images/svgs/coffee"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -30,13 +29,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           rel="home"
           title="homepage"
           sx={{
-            display: "inline-block",
+            variant: "links.secondary",
             mt: 3,
             mb: 4,
-            textDecoration: "none",
           }}
         >
-          <Button>← Homepage</Button>
+          ← Homepage
         </Link>
         <Heading
           sx={{
@@ -95,11 +93,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 rel="prev"
                 title={previous.frontmatter.title}
                 sx={{
+                  variant: "links.secondary",
                   width: "126px",
                   textDecoration: "none",
                 }}
               >
-                <Button>← Previous</Button>
+                ← Previous
               </Link>
             )}
           </Box>
@@ -109,11 +108,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               rel="next"
               title={next.frontmatter.title}
               sx={{
+                variant: "links.secondary",
                 width: "126px",
                 textDecoration: "none",
               }}
             >
-              <Button>Next →</Button>
+              Next →
             </Link>
           )}
         </Flex>
