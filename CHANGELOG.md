@@ -1,3 +1,9 @@
+# 1.0.1
+
+## Misc
+
+- change default theme to light e4bb9a7d
+
 # 1.0.0
 
 ## Features

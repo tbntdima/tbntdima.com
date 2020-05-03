@@ -2,7 +2,7 @@
   "name": "tbntdima.com",
   "private": true,
   "description": "Dima An personal website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Dima An <dmitriym44@gmail.com>",
   "dependencies": {
     "gatsby": "^2.20.25",
