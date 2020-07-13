@@ -1,107 +1,3 @@
-const primitiveStyles = {
-  h1: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 5,
-  },
-  h2: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 4,
-  },
-  h3: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 3,
-  },
-  h4: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 2,
-  },
-  h5: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 1,
-  },
-  h6: {
-    mt: 0,
-    mb: 3,
-    color: "text",
-    fontFamily: "heading",
-    lineHeight: "heading",
-    fontWeight: "heading",
-    fontSize: 0,
-  },
-  p: {
-    mt: 0,
-    mb: 4,
-    fontFamily: "body",
-    fontWeight: "body",
-    lineHeight: "body",
-  },
-  a: {
-    color: "primary",
-  },
-  pre: {
-    fontFamily: "monospace",
-    overflowX: "auto",
-    code: {
-      color: "inherit",
-    },
-  },
-  code: {
-    fontFamily: "monospace",
-    fontSize: "inherit",
-  },
-  table: {
-    width: "100%",
-    borderCollapse: "separate",
-    borderSpacing: 0,
-  },
-  th: {
-    textAlign: "left",
-    borderBottomStyle: "solid",
-  },
-  td: {
-    textAlign: "left",
-    borderBottomStyle: "solid",
-  },
-  img: {
-    maxWidth: "100%",
-  },
-  'code[class*="language-"]': {
-    color: "text",
-    backgroundColor: "codeBackground",
-  },
-  'pre[class*="language-"]': {
-    "& code": {
-      color: "inherit",
-      backgroundColor: "inherit",
-    },
-  },
-}
-
 export default {
   breakpoints: ["40em", "56em", "64em"], // 640, 896, 976
   sizes: {
@@ -158,9 +54,123 @@ export default {
       lineHeight: "body",
       fontWeight: "body",
       fontSize: 2,
-      ...primitiveStyles,
+      h1: {
+        mt: 0,
+        mb: 3,
+        color: "text",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 5,
+      },
+      h2: {
+        mt: 5,
+        mb: 3,
+        color: "primary",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 4,
+        textTransform: "uppercase",
+      },
+      h3: {
+        mt: 0,
+        mb: 3,
+        color: "primary",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 3,
+      },
+      h4: {
+        mt: 0,
+        mb: 3,
+        color: "primary",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 2,
+      },
+      h5: {
+        mt: 0,
+        mb: 3,
+        color: "primary",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 1,
+      },
+      h6: {
+        mt: 0,
+        mb: 3,
+        color: "primary",
+        fontFamily: "heading",
+        lineHeight: "heading",
+        fontWeight: "heading",
+        fontSize: 0,
+      },
+      p: {
+        mt: 0,
+        mb: 3,
+        fontFamily: "body",
+        fontWeight: "body",
+        lineHeight: "body",
+      },
+      a: {
+        color: "primary",
+      },
+      blockquote: {
+        m: 0,
+        pl: 3,
+        borderLeft: "2px solid",
+        borderColor: "primary",
+        fontSize: 1,
+      },
+      ul: {
+        mt: 0,
+        mb: 4,
+      },
+      li: {
+        mb: 2,
+      },
+      pre: {
+        fontFamily: "monospace",
+        overflowX: "auto",
+        code: {
+          color: "inherit",
+        },
+      },
+      code: {
+        fontFamily: "monospace",
+        fontSize: "inherit",
+      },
+      table: {
+        width: "100%",
+        borderCollapse: "separate",
+        borderSpacing: 0,
+      },
+      th: {
+        textAlign: "left",
+        borderBottomStyle: "solid",
+      },
+      td: {
+        textAlign: "left",
+        borderBottomStyle: "solid",
+      },
+      img: {
+        maxWidth: "100%",
+      },
+      'code[class*="language-"]': {
+        color: "text",
+        backgroundColor: "codeBackground",
+      },
+      'pre[class*="language-"]': {
+        "& code": {
+          color: "inherit",
+          backgroundColor: "inherit",
+        },
+      },
     },
-    ...primitiveStyles,
   },
   links: {
     secondary: {
