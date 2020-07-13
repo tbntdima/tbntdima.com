@@ -37,6 +37,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           ← Homepage
         </Link>
         <Heading
+          as="h1"
           sx={{
             mb: 3,
             fontSize: [4, 5, 6],
