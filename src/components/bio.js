@@ -109,7 +109,7 @@ const Bio = () => {
                   mb: 4,
                 }}
               >
-                Web dewelopment & JavaScript enthusiast.
+                Web development & JavaScript enthusiast.
                 <br />
                 Keen on React & Gatsby.
               </Text>
